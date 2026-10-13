@@ -18,19 +18,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: setup env
+        uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
+      - name: install dependencies 
+        run: npm install
       - name: Build
         run: |
-          REPO="${{ github.event.repository.name }}"
-          # user.github.io repos are served from the root, others from /repo-name/
-          if [[ "$REPO" == *.github.io ]]; then export PATH_PREFIX="/"; else export PATH_PREFIX="/$REPO/"; fi
           npm run build
-      - uses: actions/upload-pages-artifact@v3
+          echo "Done"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: ./_site
 
   deploy:
     needs: build
