@@ -395,11 +395,37 @@
     }
 
     .thumb {
+      position: relative;
       width: 135px;
       height: 135px;
       flex-shrink: 0;
+      overflow: hidden;
       background: repeating-linear-gradient(135deg, #1e1a13 0 6px, #221d15 6px 12px);
-      border: 1px solid var(--line)
+      border: 1px solid var(--line);
+      cursor: pointer
+    }
+
+    .thumb img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .thumb-portrait {
+      opacity: 0;
+      transition: opacity .25s ease
+    }
+
+    .thumb:hover .thumb-portrait,
+    .thumb:focus .thumb-portrait {
+      opacity: 1
+    }
+
+    .thumb:focus-visible {
+      outline: 2px solid var(--forensic);
+      outline-offset: 4px
     }
 
     .facts {
