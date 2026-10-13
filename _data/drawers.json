@@ -1,0 +1,6 @@
+{
+  "htb-machines": { "name": "HTB Machines", "note": "Foothold to root" },
+  "homelabs": { "name": "HomeLabs", "note": "Built and broken at home" },
+  "embedded-iot": { "name": "Embedded / IoT", "note": "Firmware, UART, soldering" },
+  "vulnerabilities": { "name": "vulnerabilities", "note": "vulnerabilities explanation" }
+}

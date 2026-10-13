@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ title }} — {{ site.handle }}</title>
+  <meta name="description" content="{{ summary }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Courier+Prime:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/post.css">
+</head>
+
+<body>
+
+  <nav>
+    <a class="logo" href="/">{{ site.handle }}</a>
+    <a class="back" href="/#cold">← back to the archive</a>
+  </nav>
+
+  <main class="page">
+
+    <header class="case">
+      <span class="tab">{{ page.date | fmtDate }}</span>
+      <h1>{{ title }}</h1>
+      <p>{{ summary }}</p>
+      <div class="tags"><span>#{{ tag }}</span></div>
+    </header>
+
+    <article>
+{{ content | safe }}
+    </article>
+  </main>
+
+  <footer>© {{ site.year }} {{ site.name }}</footer>
+</body>
+
+</html>

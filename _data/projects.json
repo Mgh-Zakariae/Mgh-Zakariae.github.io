@@ -1,0 +1,26 @@
+[
+  {
+    "url": "posts/vulnerable-web-app-Django",
+    "title": "Security Lab: Vulnerable Web Application",
+    "description": "Deployed and maintained a vulnerable Django application for exploitation exercises",
+    "stack": "Django · MariaDB · Docker"
+  },
+  {
+    "url": "posts/SIEM-attack-detection",
+    "title": "SIEM & SOC Detection Lab with Elastic Stack",
+    "description": "Designed and implemented a security monitoring solution based on the Elastic Stack to collect, process, and visualize security event logs",
+    "stack": "Elastic Stack · SIEM · AWS Lambda"
+  },
+  {
+    "url": "posts/EtE-automated-CI-CD-Pipeline",
+    "title": "End-to-End Automated CI/CD Pipeline",
+    "description": "Building an End-to-End Automated CI/CD Pipeline: From Code Push to Kubernetes Deployment",
+    "stack": "Kubernetes · Ansible · Jenkins · Docker"
+  },
+  {
+    "url": "posts/VHDL-CryptoCore-128",
+    "title": "VHDL CryptoCore 128",
+    "description": "VHDL-CryptoCore-128: High-Performance AES-128 Hardware Engine",
+    "stack": "VHDL · CryptoCore · Hardware · FPGA"
+  }
+]

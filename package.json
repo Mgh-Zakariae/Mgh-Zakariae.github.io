@@ -1,0 +1,15 @@
+{
+  "name": "0xmg-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Case-file portfolio built with Eleventy. Add posts as Markdown, projects as JSON.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
+  }
+}
