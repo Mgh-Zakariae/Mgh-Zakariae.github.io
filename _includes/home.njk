@@ -15,7 +15,12 @@
 
   <nav>
     <a class="logo" href="#hero">{{ site.handle }}</a>
-    <div class="links">
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="links" id="main-navigation">
       <a href="#about_me">About Me</a>
       <a href="#board">Projects</a>
       <a href="#cold">Articles</a>
