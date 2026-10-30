@@ -895,7 +895,12 @@
     .pin-card:hover {
       transform: rotate(0) translateY(-4px);
       border-color: #e9e2d0;
-      box-shadow: 0 14px 30px rgba(0, 0, 0, .45)
+      box-shadow: 0 14px 30px rgba(0, 0, 0, .45);
+      z-index: 1
+    }
+
+    .pin-card:focus-within {
+      z-index: 1
     }
 
     .pin-card::before {
@@ -932,7 +937,18 @@
     .pin-card p {
       font-size: 13.5px;
       color: var(--bone-dim);
-      margin: 0 0 12px
+      margin: 0 0 12px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden
+    }
+
+    .pin-card:hover p,
+    .pin-card:focus-within p {
+      display: block;
+      -webkit-line-clamp: unset;
+      overflow: visible
     }
 
     .stack {
