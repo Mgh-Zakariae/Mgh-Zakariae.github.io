@@ -149,7 +149,9 @@ title: PERSON OF INTEREST — Case File
         {%- for p in projects %}
         <div class="pin-card hide">
           <h3>
-            {%- if p.url %}<a href="{{ p.url }}" >{{ p.title }}</a>{% else %}{{ p.title }}{% endif -%}
+            {%- if p.outside_url %}<a href="{{ p.outside_url }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a>
+            {%- elif p.url %}<a href="{{ p.url }}">{{ p.title }}</a>
+            {%- else %}{{ p.title }}{% endif -%}
           </h3>
           <p>{{ p.description }}</p>
           <span class="stack">{{ p.stack }}</span>

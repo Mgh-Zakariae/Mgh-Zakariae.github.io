@@ -22,5 +22,12 @@
     "title": "VHDL CryptoCore 128",
     "description": "VHDL-CryptoCore-128: High-Performance AES-128 Hardware Engine",
     "stack": "VHDL · CryptoCore · Hardware · FPGA"
+  },
+  {
+    "url": "",
+    "outside_url": "https://github.com/Mgh-Zakariae/k8s-project/blob/main/README.md",
+    "title": "Flask + Redis on Kubernetes with a CI pipeline",
+    "description": "Built a GitHub Actions pipeline that runs pytest, then builds and pushes a versioned Docker image to Docker Hub on every release tag. Deployed the app manually on Kubernetes (Minikube) with 3 stateless Flask replicas, a Redis instance backed by a PersistentVolumeClaim, and configuration split into a ConfigMap and a Secret",
+    "stack": "CI · GitHub Actions · k8s · Docker"
   }
 ]
